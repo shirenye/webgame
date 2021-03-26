@@ -16,4 +16,10 @@ public class TestController {
 
         return "this is test";
     }
+
+    @GetMapping
+    public String test1(){
+
+        return "this is test1";
+    }
 }
