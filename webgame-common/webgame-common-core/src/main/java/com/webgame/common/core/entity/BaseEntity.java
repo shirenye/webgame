@@ -1,5 +1,8 @@
 package com.webgame.common.core.entity;
 
+import lombok.Data;
+
+import java.io.Serializable;
 import java.util.Date;
 
 /**
@@ -8,7 +11,10 @@ import java.util.Date;
  * @author cdw
  * @date 2021-03-29
  */
-public class BaseEntity {
+@Data
+public class BaseEntity implements Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     /**
      * 主键
