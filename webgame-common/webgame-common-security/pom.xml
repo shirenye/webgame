@@ -11,5 +11,25 @@
 
     <artifactId>webgame-common-security</artifactId>
 
+    <dependencies>
 
+        <!-- oauth2 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-oauth2</artifactId>
+        </dependency>
+
+        <!-- security -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-security</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.webgame</groupId>
+            <artifactId>webgame-common-core</artifactId>
+        </dependency>
+
+
+    </dependencies>
 </project>

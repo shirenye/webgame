@@ -49,6 +49,11 @@
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>com.webgame</groupId>
+            <artifactId>webgame-common-security</artifactId>
+            <version>1.0.0</version>
+        </dependency>
     </dependencies>
 
     <build>
