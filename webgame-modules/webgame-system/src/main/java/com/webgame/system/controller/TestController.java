@@ -22,4 +22,15 @@ public class TestController {
 
         return "this is test1";
     }
+
+    @GetMapping
+    public String test2(){
+
+        return "this is test2";
+    }
+    @GetMapping
+    public String test3(){
+
+        return "this is test3";
+    }
 }
