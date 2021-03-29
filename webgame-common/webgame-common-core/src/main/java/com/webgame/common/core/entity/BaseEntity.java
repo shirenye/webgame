@@ -11,6 +11,11 @@ import java.util.Date;
 public class BaseEntity {
 
     /**
+     * 主键
+     */
+    public Integer id;
+
+    /**
      * 创建人
      */
     public Integer createBy;

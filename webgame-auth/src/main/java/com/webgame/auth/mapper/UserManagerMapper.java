@@ -1,11 +1,14 @@
 package com.webgame.auth.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.webgame.common.core.entity.system.User;
+import com.webgame.common.core.entity.system.SysUser;
 
-import java.util.List;
-
-public interface UserManagerMapper extends BaseMapper<User> {
+/**
+ *
+ * @author cdw
+ * @date 2021-03-29
+ */
+public interface UserManagerMapper extends BaseMapper<SysUser> {
 
 
 

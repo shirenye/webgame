@@ -19,7 +19,7 @@ public class WebGameUserDetailServiceImpl implements UserDetailsService {
 
     private final PasswordEncoder passwordEncoder;
 
-//    private final User
+//    private final
     @Override
     public UserDetails loadUserByUsername(String s) throws UsernameNotFoundException {
         return null;
