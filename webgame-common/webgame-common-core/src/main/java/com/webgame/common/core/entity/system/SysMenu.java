@@ -1,6 +1,7 @@
 package com.webgame.common.core.entity.system;
 
 import com.webgame.common.core.entity.BaseEntity;
+import lombok.Data;
 
 /**
  * 菜单权限表 sys_menu
@@ -8,12 +9,10 @@ import com.webgame.common.core.entity.BaseEntity;
  * @author cdw
  * @date 2021-03-29
  */
+@Data
 public class SysMenu extends BaseEntity
 {
     private static final long serialVersionUID = 1L;
-
-    /** 菜单ID */
-    private Long menuId;
 
     /** 菜单名称 */
     private String menuName;

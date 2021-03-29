@@ -4,6 +4,7 @@ import com.webgame.common.core.annotation.Excel;
 import com.webgame.common.core.annotation.Excel.ColumnType;
 import com.webgame.common.core.annotation.Excel.Type;
 import com.webgame.common.core.entity.BaseEntity;
+import lombok.Data;
 
 import java.util.Date;
 
@@ -13,6 +14,7 @@ import java.util.Date;
  * @author cdw
  * @date 2021-03-29
  */
+@Data
 public class SysUser extends BaseEntity {
 
     /** 用户ID */

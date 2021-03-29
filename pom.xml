@@ -203,6 +203,12 @@
         <artifactId>webgame-common-redis</artifactId>
         <version>${webgame.version}</version>
       </dependency>
+
+      <dependency>
+        <groupId>com.webgame</groupId>
+        <artifactId>webgame-common-security</artifactId>
+        <version>${webgame.version}</version>
+      </dependency>
     </dependencies>
   </dependencyManagement>
 
