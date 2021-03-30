@@ -3,7 +3,8 @@ package com.webgame.common.core.constant;
 import org.apache.commons.lang3.RandomStringUtils;
 
 /**
- * @author MrBird
+ * @author cdw
+ * @date 2021-03-30
  */
 public interface SocialConstant {
 

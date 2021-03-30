@@ -2,14 +2,18 @@ package com.webgame.auth.service.impl;
 
 import com.webgame.auth.service.UserManagerService;
 import com.webgame.common.core.constant.ParamsConstant;
+import com.webgame.common.core.constant.SocialConstant;
 import com.webgame.common.core.constant.UserConstant;
 import com.webgame.common.core.dto.system.SysUserDto;
 import com.webgame.common.core.entity.WebGameAuthUser;
 import com.webgame.common.core.entity.system.SysUser;
 import com.webgame.common.core.utils.WebGameUtil;
 import lombok.RequiredArgsConstructor;
+import org.apache.commons.lang3.AnnotationUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.BeanUtils;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.AuthorityUtils;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -17,6 +21,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.List;
 
 /**
  * spring security
@@ -44,10 +49,14 @@ public class WebGameUserDetailServiceImpl implements UserDetailsService {
             }
             String password = sysUser.getPassword();
             String loginType = (String) httpServletRequest.getAttribute(ParamsConstant.LOGIN_TYPE);
-            if(StringUtils.equals(loginType, Co)) {
-
+            if(StringUtils.equals(loginType, SocialConstant.SOCIAL_LOGIN)) {
+                password = passwordEncoder.encode(SocialConstant.getSocialLoginPassword());
             }
-            WebGameAuthUser authUser = new WebGameAuthUser();
+            List<GrantedAuthority> grantedAuthorities = AuthorityUtils.NO_AUTHORITIES;
+            if(StringUtils.isNotBlank(permissions)) {
+                grantedAuthorities = AuthorityUtils.commaSeparatedStringToAuthorityList(permissions);
+            }
+            WebGameAuthUser authUser = new WebGameAuthUser(sysUser.getUserName(), password, true, true, true, notLocked, grantedAuthorities);
             BeanUtils.copyProperties(sysUser, authUser);
             return null;
         } else {
