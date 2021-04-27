@@ -7,6 +7,7 @@ import com.webgame.common.core.constant.StringConstant;
 import com.webgame.common.core.dto.system.SysUserDto;
 import com.webgame.common.core.entity.system.SysMenu;
 import com.webgame.common.core.entity.system.SysUser;
+import com.webgame.common.core.entity.system.SystemUser;
 import org.springframework.beans.BeanUtils;
 
 import java.util.List;
@@ -24,7 +25,7 @@ public class UserManagerServiceImpl implements UserManagerService {
     @Override
     public SysUserDto findByName(String userName) {
         SysUserDto sysUserDto = new SysUserDto();
-        SysUser sysUser = userMapper.findByName(userName);
+        SystemUser sysUser = userMapper.findByName(userName);
         if (sysUser != null) {
            BeanUtils.copyProperties(sysUser, sysUserDto);
            sysUserDto.setMenus(menuMapper.findUserPermissions(sysUserDto.getUserName()));

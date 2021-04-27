@@ -1,13 +1,9 @@
 package com.webgame.common.core.utils;
 
-import cc.mrbird.febs.common.core.entity.CurrentUser;
-import cc.mrbird.febs.common.core.entity.FebsAuthUser;
-import cc.mrbird.febs.common.core.entity.constant.PageConstant;
-import cc.mrbird.febs.common.core.entity.constant.RegexpConstant;
-import cc.mrbird.febs.common.core.entity.constant.StringConstant;
 import com.alibaba.fastjson.JSONObject;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.webgame.common.core.constant.StringConstant;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.core.env.Environment;
@@ -24,8 +20,6 @@ import org.springframework.security.oauth2.provider.OAuth2Authentication;
 import org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationDetails;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
-import reactor.core.publisher.Mono;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
@@ -168,26 +162,26 @@ public abstract class WebGameUtil {
      * @param value       响应内容
      * @return Mono<Void>
      */
-    public static Mono<Void> makeWebFluxResponse(ServerHttpResponse response, String contentType,
-                                                 HttpStatus status, Object value) {
-        response.setStatusCode(status);
-        response.getHeaders().add(HttpHeaders.CONTENT_TYPE, contentType);
-        DataBuffer dataBuffer = response.bufferFactory().wrap(JSONObject.toJSONString(value).getBytes());
-        return response.writeWith(Mono.just(dataBuffer));
-    }
+//    public static Mono<Void> makeWebFluxResponse(ServerHttpResponse response, String contentType,
+//                                                 HttpStatus status, Object value) {
+//        response.setStatusCode(status);
+//        response.getHeaders().add(HttpHeaders.CONTENT_TYPE, contentType);
+//        DataBuffer dataBuffer = response.bufferFactory().wrap(JSONObject.toJSONString(value).getBytes());
+//        return response.writeWith(Mono.just(dataBuffer));
+//    }
 
-    /**
-     * 封装前端分页表格所需数据
-     *
-     * @param pageInfo pageInfo
-     * @return Map<String, Object>
-     */
-    public static Map<String, Object> getDataTable(IPage<?> pageInfo) {
-        Map<String, Object> data = new HashMap<>(4);
-        data.put(PageConstant.ROWS, pageInfo.getRecords());
-        data.put(PageConstant.TOTAL, pageInfo.getTotal());
-        return data;
-    }
+//    /**
+//     * 封装前端分页表格所需数据
+//     *
+//     * @param pageInfo pageInfo
+//     * @return Map<String, Object>
+//     */
+//    public static Map<String, Object> getDataTable(IPage<?> pageInfo) {
+//        Map<String, Object> data = new HashMap<>(4);
+//        data.put(PageConstant.ROWS, pageInfo.getRecords());
+//        data.put(PageConstant.TOTAL, pageInfo.getTotal());
+//        return data;
+//    }
 
     /**
      * 获取HttpServletRequest
@@ -253,49 +247,49 @@ public abstract class WebGameUtil {
         return "0:0:0:0:0:0:0:1".equals(ip) ? "127.0.0.1" : ip;
     }
 
-    /**
-     * 判断是否包含中文
-     *
-     * @param value 内容
-     * @return 结果
-     */
-    public static boolean containChinese(String value) {
-        if (StringUtils.isBlank(value)) {
-            return Boolean.FALSE;
-        }
-        Matcher matcher = RegexpConstant.CHINESE.matcher(value);
-        return matcher.find();
-    }
+//    /**
+//     * 判断是否包含中文
+//     *
+//     * @param value 内容
+//     * @return 结果
+//     */
+//    public static boolean containChinese(String value) {
+//        if (StringUtils.isBlank(value)) {
+//            return Boolean.FALSE;
+//        }
+//        Matcher matcher = RegexpConstant.CHINESE.matcher(value);
+//        return matcher.find();
+//    }
 
-    /**
-     * 获取在线用户信息
-     *
-     * @return CurrentUser 当前用户信息
-     */
-    public static CurrentUser getCurrentUser() {
-        try {
-            LinkedHashMap<String, Object> authenticationDetails = getAuthenticationDetails();
-            Object principal = authenticationDetails.get("principal");
-            ObjectMapper mapper = new ObjectMapper();
-            return mapper.readValue(mapper.writeValueAsString(principal), CurrentUser.class);
-        } catch (Exception e) {
-            log.error("获取当前用户信息失败", e);
-            return null;
-        }
-    }
+//    /**
+//     * 获取在线用户信息
+//     *
+//     * @return CurrentUser 当前用户信息
+//     */
+//    public static CurrentUser getCurrentUser() {
+//        try {
+//            LinkedHashMap<String, Object> authenticationDetails = getAuthenticationDetails();
+//            Object principal = authenticationDetails.get("principal");
+//            ObjectMapper mapper = new ObjectMapper();
+//            return mapper.readValue(mapper.writeValueAsString(principal), CurrentUser.class);
+//        } catch (Exception e) {
+//            log.error("获取当前用户信息失败", e);
+//            return null;
+//        }
+//    }
 
-    /**
-     * 获取当前用户名称
-     *
-     * @return String 用户名
-     */
-    public static String getCurrentUsername() {
-        Object principal = getOauth2Authentication().getPrincipal();
-        if (principal instanceof FebsAuthUser) {
-            return ((FebsAuthUser) principal).getUsername();
-        }
-        return (String) getOauth2Authentication().getPrincipal();
-    }
+//    /**
+//     * 获取当前用户名称
+//     *
+//     * @return String 用户名
+//     */
+//    public static String getCurrentUsername() {
+//        Object principal = getOauth2Authentication().getPrincipal();
+//        if (principal instanceof FebsAuthUser) {
+//            return ((FebsAuthUser) principal).getUsername();
+//        }
+//        return (String) getOauth2Authentication().getPrincipal();
+//    }
 
     /**
      * 获取当前用户权限集

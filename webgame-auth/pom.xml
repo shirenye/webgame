@@ -24,13 +24,6 @@
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
         </dependency>
-
-        <!-- SpringCloud Ailibaba Sentinel -->
-        <dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
-        </dependency>
-
         <!-- SpringBoot Web -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -50,9 +43,34 @@
         </dependency>
 
         <dependency>
+            <groupId>com.github.whvcse</groupId>
+            <artifactId>easy-captcha</artifactId>
+         </dependency>
+
+        <dependency>
             <groupId>com.webgame</groupId>
             <artifactId>webgame-common-security</artifactId>
          </dependency>
+
+        <dependency>
+            <groupId>com.webgame</groupId>
+            <artifactId>webgame-common-redis</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.webgame</groupId>
+            <artifactId>webgame-common-datasource</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.session</groupId>
+            <artifactId>spring-session-core</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.session</groupId>
+            <artifactId>spring-session-data-redis</artifactId>
+        </dependency>
     </dependencies>
 
     <build>

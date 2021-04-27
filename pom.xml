@@ -14,6 +14,7 @@
     <module>webgame-api</module>
     <module>webgame-modules</module>
     <module>webgame-common</module>
+    <module>webgame-mq</module>
   </modules>
   <packaging>pom</packaging>
 
@@ -44,6 +45,9 @@
     <common-pool.version>2.6.2</common-pool.version>
     <lombok.version>1.18.10</lombok.version>
     <mybatis-plus.version>3.2.0</mybatis-plus.version>
+    <dynamic-datasource.version>2.5.7</dynamic-datasource.version>
+    <jjwt.version>0.9.1</jjwt.version>
+    <easy-captcha.version>1.6.2</easy-captcha.version>
   </properties>
 
   <!-- 依赖声明 -->
@@ -178,6 +182,24 @@
         <groupId>com.baomidou</groupId>
         <artifactId>mybatis-plus-boot-starter</artifactId>
         <version>${mybatis-plus.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.baomidou</groupId>
+        <artifactId>dynamic-datasource-spring-boot-starter</artifactId>
+        <version>${dynamic-datasource.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>io.jsonwebtoken</groupId>
+        <artifactId>jjwt</artifactId>
+        <version>${jjwt.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.github.whvcse</groupId>
+        <artifactId>easy-captcha</artifactId>
+        <version>${easy-captcha.version}</version>
       </dependency>
 
       <dependency>
