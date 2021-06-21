@@ -6,6 +6,7 @@ import com.webgame.auth.handler.WebGameWebLoginSuccessHandler;
 import com.webgame.common.core.constant.EndpointConstant;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.core.annotation.Order;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -24,6 +25,7 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
  * @date 2021-03-30
  */
 @Order(2)
+@Configuration
 @EnableWebSecurity
 @RequiredArgsConstructor
 public class WebGameSecurityConfigure extends WebSecurityConfigurerAdapter {

@@ -15,7 +15,8 @@ import org.springframework.session.data.redis.config.annotation.web.http.EnableR
  */
 @EnableRedisHttpSession
 @MapperScan("com.webgame.auth.mapper")
-@SpringBootApplication(scanBasePackages={"com.webgame.common.*"})
+@SpringBootApplication(scanBasePackages={"com.webgame.common.*"},exclude={SecurityAutoConfiguration.class})
+//@SpringBootApplication(scanBasePackages={"com.webgame.common.*"},exclude={SecurityAutoConfiguration.class,SecurityFilterAutoConfiguration.class})
 public class WebGameAuthApplication
 {
     public static void main(String[] args)
