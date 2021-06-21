@@ -1,0 +1,211 @@
+15:30:04.482 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.1.6.Final
+15:30:06.325 [main] INFO  c.a.n.c.c.i.LocalConfigInfoProcessor - [<clinit>,212] - LOCAL_SNAPSHOT_PATH:C:\Users\yilifenchen\nacos\config
+15:30:06.382 [main] INFO  c.a.n.c.c.i.Limiter - [<clinit>,54] - limitTime:5.0
+15:30:06.635 [main] INFO  c.a.n.c.c.u.JvmUtil - [<clinit>,49] - isMultiInstance:false
+15:30:06.807 [main] INFO  c.w.a.WebGameAuthApplication - [logStartupProfileInfo,655] - The following profiles are active: dev
+15:30:11.702 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8101"]
+15:30:11.703 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+15:30:11.704 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.41]
+15:30:12.446 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+15:30:17.032 [main] INFO  o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
+15:31:29.718 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.1.6.Final
+15:31:30.680 [main] INFO  c.a.n.c.c.i.LocalConfigInfoProcessor - [<clinit>,212] - LOCAL_SNAPSHOT_PATH:C:\Users\yilifenchen\nacos\config
+15:31:30.706 [main] INFO  c.a.n.c.c.i.Limiter - [<clinit>,54] - limitTime:5.0
+15:31:30.796 [main] INFO  c.a.n.c.c.u.JvmUtil - [<clinit>,49] - isMultiInstance:false
+15:31:30.894 [main] INFO  c.w.a.WebGameAuthApplication - [logStartupProfileInfo,655] - The following profiles are active: dev
+15:31:32.943 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8101"]
+15:31:32.944 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+15:31:32.944 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.41]
+15:31:33.068 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+15:31:34.912 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+15:31:34.925 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+15:31:36.021 [main] INFO  c.a.n.client.naming - [call,65] - initializer namespace from System Property :null
+15:31:36.023 [main] INFO  c.a.n.client.naming - [call,74] - initializer namespace from System Environment :null
+15:31:36.024 [main] INFO  c.a.n.client.naming - [call,84] - initializer namespace from System Property :null
+15:31:36.139 [main] INFO  c.z.h.HikariDataSource - [<init>,80] - base - Starting...
+15:31:37.193 [main] INFO  c.z.h.HikariDataSource - [<init>,82] - base - Start completed.
+15:31:37.193 [main] INFO  c.b.d.d.DynamicRoutingDataSource - [addDataSource,144] - dynamic-datasource - load a datasource named [base] success
+15:31:37.193 [main] INFO  c.b.d.d.DynamicRoutingDataSource - [afterPropertiesSet,216] - dynamic-datasource initial loaded [1] datasource,primary datasource named [base]
+15:31:40.213 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8101"]
+15:31:40.240 [main] INFO  c.a.n.client.naming - [addBeatInfo,81] - [BEAT] adding beat: BeatInfo{port=8101, ip='192.168.1.110', weight=1.0, serviceName='DEFAULT_GROUP@@webgame-auth', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+15:31:40.240 [main] INFO  c.a.n.client.naming - [registerService,230] - [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@webgame-auth with instance: Instance{instanceId='null', ip='192.168.1.110', port=8101, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+15:31:40.276 [main] INFO  c.a.c.n.r.NacosServiceRegistry - [register,75] - nacos registry, DEFAULT_GROUP webgame-auth 192.168.1.110:8101 register finished
+15:31:40.907 [com.alibaba.nacos.naming.push.receiver] INFO  c.a.n.client.naming - [run,86] - received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@webgame-auth\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"192.168.1.110#8101#DEFAULT#DEFAULT_GROUP@@webgame-auth\",\"ip\":\"192.168.1.110\",\"port\":8101,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@webgame-auth\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"instanceHeartBeatInterval\":5000,\"instanceHeartBeatTimeOut\":15000,\"ipDeleteTimeout\":30000}],\"lastRefTime\":1622876154797,\"checksum\":\"\",\"allIPs\":false,\"valid\":true}","lastRefTime":1379388880140} from /192.168.1.118
+15:31:40.933 [com.alibaba.nacos.naming.push.receiver] INFO  c.a.n.client.naming - [processServiceJson,228] - new ips(1) service: DEFAULT_GROUP@@webgame-auth@@DEFAULT -> [{"instanceId":"192.168.1.110#8101#DEFAULT#DEFAULT_GROUP@@webgame-auth","ip":"192.168.1.110","port":8101,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@webgame-auth","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+15:31:40.965 [com.alibaba.nacos.naming.push.receiver] INFO  c.a.n.client.naming - [processServiceJson,267] - current ips:(1) service: DEFAULT_GROUP@@webgame-auth@@DEFAULT -> [{"instanceId":"192.168.1.110#8101#DEFAULT#DEFAULT_GROUP@@webgame-auth","ip":"192.168.1.110","port":8101,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@webgame-auth","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+15:31:41.395 [main] INFO  c.w.a.WebGameAuthApplication - [logStarted,61] - Started WebGameAuthApplication in 12.688 seconds (JVM running for 14.721)
+15:31:41.413 [main] INFO  c.a.n.c.c.i.ClientWorker - [addCacheDataIfAbsent,239] - [fixed-192.168.1.118_8848] [subscribe] webgame-auth+DEFAULT_GROUP
+15:31:41.414 [main] INFO  c.a.n.c.c.i.CacheData - [addListener,93] - [fixed-192.168.1.118_8848] [add-listener] ok, tenant=, dataId=webgame-auth, group=DEFAULT_GROUP, cnt=1
+15:31:41.414 [main] INFO  c.a.n.c.c.i.ClientWorker - [addCacheDataIfAbsent,239] - [fixed-192.168.1.118_8848] [subscribe] webgame-auth.yml+DEFAULT_GROUP
+15:31:41.414 [main] INFO  c.a.n.c.c.i.CacheData - [addListener,93] - [fixed-192.168.1.118_8848] [add-listener] ok, tenant=, dataId=webgame-auth.yml, group=DEFAULT_GROUP, cnt=1
+15:31:41.421 [main] INFO  c.a.n.c.c.i.ClientWorker - [addCacheDataIfAbsent,239] - [fixed-192.168.1.118_8848] [subscribe] webgame-auth-dev.yml+DEFAULT_GROUP
+15:31:41.421 [main] INFO  c.a.n.c.c.i.CacheData - [addListener,93] - [fixed-192.168.1.118_8848] [add-listener] ok, tenant=, dataId=webgame-auth-dev.yml, group=DEFAULT_GROUP, cnt=1
+15:31:42.474 [RMI TCP Connection(2)-192.168.1.110] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:38:09.234 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.1.6.Final
+15:38:10.238 [main] INFO  c.a.n.c.c.i.LocalConfigInfoProcessor - [<clinit>,212] - LOCAL_SNAPSHOT_PATH:C:\Users\yilifenchen\nacos\config
+15:38:10.263 [main] INFO  c.a.n.c.c.i.Limiter - [<clinit>,54] - limitTime:5.0
+15:38:10.309 [main] INFO  c.a.n.c.c.u.JvmUtil - [<clinit>,49] - isMultiInstance:false
+15:38:10.388 [main] INFO  c.w.a.WebGameAuthApplication - [logStartupProfileInfo,655] - The following profiles are active: dev
+15:38:12.417 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8101"]
+15:38:12.418 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+15:38:12.419 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.41]
+15:38:12.543 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+15:38:14.389 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+15:38:14.394 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+15:38:15.350 [main] INFO  c.a.n.client.naming - [call,65] - initializer namespace from System Property :null
+15:38:15.351 [main] INFO  c.a.n.client.naming - [call,74] - initializer namespace from System Environment :null
+15:38:15.351 [main] INFO  c.a.n.client.naming - [call,84] - initializer namespace from System Property :null
+15:38:15.422 [main] INFO  c.z.h.HikariDataSource - [<init>,80] - base - Starting...
+15:38:15.739 [main] INFO  c.z.h.HikariDataSource - [<init>,82] - base - Start completed.
+15:38:15.739 [main] INFO  c.b.d.d.DynamicRoutingDataSource - [addDataSource,144] - dynamic-datasource - load a datasource named [base] success
+15:38:15.739 [main] INFO  c.b.d.d.DynamicRoutingDataSource - [afterPropertiesSet,216] - dynamic-datasource initial loaded [1] datasource,primary datasource named [base]
+15:38:17.786 [main] INFO  c.a.n.client.naming - [processServiceJson,228] - new ips(1) service: DEFAULT_GROUP@@webgame-auth@@DEFAULT -> [{"instanceId":"192.168.1.110#8101#DEFAULT#DEFAULT_GROUP@@webgame-auth","ip":"192.168.1.110","port":8101,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@webgame-auth","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+15:38:17.800 [main] INFO  c.a.n.client.naming - [processServiceJson,267] - current ips:(1) service: DEFAULT_GROUP@@webgame-auth@@DEFAULT -> [{"instanceId":"192.168.1.110#8101#DEFAULT#DEFAULT_GROUP@@webgame-auth","ip":"192.168.1.110","port":8101,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@webgame-auth","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+15:38:17.802 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8101"]
+15:38:17.825 [main] INFO  c.a.n.client.naming - [addBeatInfo,81] - [BEAT] adding beat: BeatInfo{port=8101, ip='192.168.1.110', weight=1.0, serviceName='DEFAULT_GROUP@@webgame-auth', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+15:38:17.826 [main] INFO  c.a.n.client.naming - [registerService,230] - [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@webgame-auth with instance: Instance{instanceId='null', ip='192.168.1.110', port=8101, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+15:38:17.846 [main] INFO  c.a.c.n.r.NacosServiceRegistry - [register,75] - nacos registry, DEFAULT_GROUP webgame-auth 192.168.1.110:8101 register finished
+15:38:18.417 [com.alibaba.nacos.naming.push.receiver] INFO  c.a.n.client.naming - [run,86] - received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@webgame-auth\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"192.168.1.110#8101#DEFAULT#DEFAULT_GROUP@@webgame-auth\",\"ip\":\"192.168.1.110\",\"port\":8101,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@webgame-auth\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"instanceHeartBeatInterval\":5000,\"instanceHeartBeatTimeOut\":15000,\"ipDeleteTimeout\":30000}],\"lastRefTime\":1622876552376,\"checksum\":\"\",\"allIPs\":false,\"valid\":true}","lastRefTime":1776964728995} from /192.168.1.118
+15:38:18.419 [com.alibaba.nacos.naming.push.receiver] INFO  c.a.n.client.naming - [addBeatInfo,81] - [BEAT] adding beat: BeatInfo{port=8101, ip='192.168.1.110', weight=1.0, serviceName='DEFAULT_GROUP@@webgame-auth', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+15:38:18.420 [com.alibaba.nacos.naming.push.receiver] INFO  c.a.n.client.naming - [processServiceJson,241] - modified ips(1) service: DEFAULT_GROUP@@webgame-auth@@DEFAULT -> [{"instanceId":"192.168.1.110#8101#DEFAULT#DEFAULT_GROUP@@webgame-auth","ip":"192.168.1.110","port":8101,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@webgame-auth","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+15:38:18.429 [com.alibaba.nacos.naming.push.receiver] INFO  c.a.n.client.naming - [processServiceJson,267] - current ips:(1) service: DEFAULT_GROUP@@webgame-auth@@DEFAULT -> [{"instanceId":"192.168.1.110#8101#DEFAULT#DEFAULT_GROUP@@webgame-auth","ip":"192.168.1.110","port":8101,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@webgame-auth","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+15:38:18.915 [main] INFO  c.w.a.WebGameAuthApplication - [logStarted,61] - Started WebGameAuthApplication in 10.914 seconds (JVM running for 12.441)
+15:38:18.920 [main] INFO  c.a.n.c.c.i.ClientWorker - [addCacheDataIfAbsent,239] - [fixed-192.168.1.118_8848] [subscribe] webgame-auth+DEFAULT_GROUP
+15:38:18.921 [main] INFO  c.a.n.c.c.i.CacheData - [addListener,93] - [fixed-192.168.1.118_8848] [add-listener] ok, tenant=, dataId=webgame-auth, group=DEFAULT_GROUP, cnt=1
+15:38:18.922 [main] INFO  c.a.n.c.c.i.ClientWorker - [addCacheDataIfAbsent,239] - [fixed-192.168.1.118_8848] [subscribe] webgame-auth.yml+DEFAULT_GROUP
+15:38:18.923 [main] INFO  c.a.n.c.c.i.CacheData - [addListener,93] - [fixed-192.168.1.118_8848] [add-listener] ok, tenant=, dataId=webgame-auth.yml, group=DEFAULT_GROUP, cnt=1
+15:38:18.926 [main] INFO  c.a.n.c.c.i.ClientWorker - [addCacheDataIfAbsent,239] - [fixed-192.168.1.118_8848] [subscribe] webgame-auth-dev.yml+DEFAULT_GROUP
+15:38:18.926 [main] INFO  c.a.n.c.c.i.CacheData - [addListener,93] - [fixed-192.168.1.118_8848] [add-listener] ok, tenant=, dataId=webgame-auth-dev.yml, group=DEFAULT_GROUP, cnt=1
+15:38:19.730 [RMI TCP Connection(2)-192.168.1.110] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:39:22.758 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.1.6.Final
+15:39:23.701 [main] INFO  c.a.n.c.c.i.LocalConfigInfoProcessor - [<clinit>,212] - LOCAL_SNAPSHOT_PATH:C:\Users\yilifenchen\nacos\config
+15:39:23.727 [main] INFO  c.a.n.c.c.i.Limiter - [<clinit>,54] - limitTime:5.0
+15:39:23.782 [main] INFO  c.a.n.c.c.u.JvmUtil - [<clinit>,49] - isMultiInstance:false
+15:39:23.891 [main] INFO  c.w.a.WebGameAuthApplication - [logStartupProfileInfo,655] - The following profiles are active: dev
+15:39:25.838 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8101"]
+15:39:25.838 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+15:39:25.839 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.41]
+15:39:25.963 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+15:39:27.817 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+15:39:27.821 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+15:39:28.732 [main] INFO  c.a.n.client.naming - [call,65] - initializer namespace from System Property :null
+15:39:28.733 [main] INFO  c.a.n.client.naming - [call,74] - initializer namespace from System Environment :null
+15:39:28.734 [main] INFO  c.a.n.client.naming - [call,84] - initializer namespace from System Property :null
+15:39:28.801 [main] INFO  c.z.h.HikariDataSource - [<init>,80] - base - Starting...
+15:39:29.112 [main] INFO  c.z.h.HikariDataSource - [<init>,82] - base - Start completed.
+15:39:29.113 [main] INFO  c.b.d.d.DynamicRoutingDataSource - [addDataSource,144] - dynamic-datasource - load a datasource named [base] success
+15:39:29.113 [main] INFO  c.b.d.d.DynamicRoutingDataSource - [afterPropertiesSet,216] - dynamic-datasource initial loaded [1] datasource,primary datasource named [base]
+15:39:31.214 [main] INFO  c.a.n.client.naming - [processServiceJson,228] - new ips(1) service: DEFAULT_GROUP@@webgame-auth@@DEFAULT -> [{"instanceId":"192.168.1.110#8101#DEFAULT#DEFAULT_GROUP@@webgame-auth","ip":"192.168.1.110","port":8101,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@webgame-auth","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+15:39:31.226 [main] INFO  c.a.n.client.naming - [processServiceJson,267] - current ips:(1) service: DEFAULT_GROUP@@webgame-auth@@DEFAULT -> [{"instanceId":"192.168.1.110#8101#DEFAULT#DEFAULT_GROUP@@webgame-auth","ip":"192.168.1.110","port":8101,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@webgame-auth","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+15:39:31.229 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8101"]
+15:39:31.251 [main] INFO  c.a.n.client.naming - [addBeatInfo,81] - [BEAT] adding beat: BeatInfo{port=8101, ip='192.168.1.110', weight=1.0, serviceName='DEFAULT_GROUP@@webgame-auth', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+15:39:31.252 [main] INFO  c.a.n.client.naming - [registerService,230] - [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@webgame-auth with instance: Instance{instanceId='null', ip='192.168.1.110', port=8101, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+15:39:31.265 [main] INFO  c.a.c.n.r.NacosServiceRegistry - [register,75] - nacos registry, DEFAULT_GROUP webgame-auth 192.168.1.110:8101 register finished
+15:39:31.785 [com.alibaba.nacos.naming.push.receiver] INFO  c.a.n.client.naming - [run,86] - received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@webgame-auth\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"192.168.1.110#8101#DEFAULT#DEFAULT_GROUP@@webgame-auth\",\"ip\":\"192.168.1.110\",\"port\":8101,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@webgame-auth\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"instanceHeartBeatInterval\":5000,\"instanceHeartBeatTimeOut\":15000,\"ipDeleteTimeout\":30000}],\"lastRefTime\":1622876625759,\"checksum\":\"\",\"allIPs\":false,\"valid\":true}","lastRefTime":1850349924748} from /192.168.1.118
+15:39:31.788 [com.alibaba.nacos.naming.push.receiver] INFO  c.a.n.client.naming - [addBeatInfo,81] - [BEAT] adding beat: BeatInfo{port=8101, ip='192.168.1.110', weight=1.0, serviceName='DEFAULT_GROUP@@webgame-auth', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+15:39:31.788 [com.alibaba.nacos.naming.push.receiver] INFO  c.a.n.client.naming - [processServiceJson,241] - modified ips(1) service: DEFAULT_GROUP@@webgame-auth@@DEFAULT -> [{"instanceId":"192.168.1.110#8101#DEFAULT#DEFAULT_GROUP@@webgame-auth","ip":"192.168.1.110","port":8101,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@webgame-auth","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+15:39:31.795 [com.alibaba.nacos.naming.push.receiver] INFO  c.a.n.client.naming - [processServiceJson,267] - current ips:(1) service: DEFAULT_GROUP@@webgame-auth@@DEFAULT -> [{"instanceId":"192.168.1.110#8101#DEFAULT#DEFAULT_GROUP@@webgame-auth","ip":"192.168.1.110","port":8101,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@webgame-auth","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+15:39:32.325 [main] INFO  c.w.a.WebGameAuthApplication - [logStarted,61] - Started WebGameAuthApplication in 10.713 seconds (JVM running for 12.447)
+15:39:32.334 [main] INFO  c.a.n.c.c.i.ClientWorker - [addCacheDataIfAbsent,239] - [fixed-192.168.1.118_8848] [subscribe] webgame-auth+DEFAULT_GROUP
+15:39:32.335 [main] INFO  c.a.n.c.c.i.CacheData - [addListener,93] - [fixed-192.168.1.118_8848] [add-listener] ok, tenant=, dataId=webgame-auth, group=DEFAULT_GROUP, cnt=1
+15:39:32.335 [main] INFO  c.a.n.c.c.i.ClientWorker - [addCacheDataIfAbsent,239] - [fixed-192.168.1.118_8848] [subscribe] webgame-auth.yml+DEFAULT_GROUP
+15:39:32.336 [main] INFO  c.a.n.c.c.i.CacheData - [addListener,93] - [fixed-192.168.1.118_8848] [add-listener] ok, tenant=, dataId=webgame-auth.yml, group=DEFAULT_GROUP, cnt=1
+15:39:32.337 [main] INFO  c.a.n.c.c.i.ClientWorker - [addCacheDataIfAbsent,239] - [fixed-192.168.1.118_8848] [subscribe] webgame-auth-dev.yml+DEFAULT_GROUP
+15:39:32.339 [main] INFO  c.a.n.c.c.i.CacheData - [addListener,93] - [fixed-192.168.1.118_8848] [add-listener] ok, tenant=, dataId=webgame-auth-dev.yml, group=DEFAULT_GROUP, cnt=1
+15:39:33.071 [RMI TCP Connection(2)-192.168.1.110] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:44:03.810 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.1.6.Final
+15:44:05.362 [main] INFO  c.a.n.c.c.i.LocalConfigInfoProcessor - [<clinit>,212] - LOCAL_SNAPSHOT_PATH:C:\Users\yilifenchen\nacos\config
+15:44:05.395 [main] INFO  c.a.n.c.c.i.Limiter - [<clinit>,54] - limitTime:5.0
+15:44:05.486 [main] INFO  c.a.n.c.c.u.JvmUtil - [<clinit>,49] - isMultiInstance:false
+15:44:05.556 [main] INFO  c.w.a.WebGameAuthApplication - [logStartupProfileInfo,655] - The following profiles are active: dev
+15:44:08.550 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8101"]
+15:44:08.551 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+15:44:08.551 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.41]
+15:44:08.686 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+15:44:09.650 [main] INFO  o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
+15:44:59.985 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.1.6.Final
+15:45:00.956 [main] INFO  c.a.n.c.c.i.LocalConfigInfoProcessor - [<clinit>,212] - LOCAL_SNAPSHOT_PATH:C:\Users\yilifenchen\nacos\config
+15:45:00.983 [main] INFO  c.a.n.c.c.i.Limiter - [<clinit>,54] - limitTime:5.0
+15:45:01.111 [main] INFO  c.a.n.c.c.u.JvmUtil - [<clinit>,49] - isMultiInstance:false
+15:45:01.196 [main] INFO  c.w.a.WebGameAuthApplication - [logStartupProfileInfo,655] - The following profiles are active: dev
+15:45:03.242 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8101"]
+15:45:03.245 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+15:45:03.247 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.41]
+15:45:03.375 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+15:45:05.221 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+15:45:05.225 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+15:45:06.192 [main] INFO  c.a.n.client.naming - [call,65] - initializer namespace from System Property :null
+15:45:06.193 [main] INFO  c.a.n.client.naming - [call,74] - initializer namespace from System Environment :null
+15:45:06.193 [main] INFO  c.a.n.client.naming - [call,84] - initializer namespace from System Property :null
+15:45:06.265 [main] INFO  c.z.h.HikariDataSource - [<init>,80] - base - Starting...
+15:45:06.605 [main] INFO  c.z.h.HikariDataSource - [<init>,82] - base - Start completed.
+15:45:06.605 [main] INFO  c.b.d.d.DynamicRoutingDataSource - [addDataSource,144] - dynamic-datasource - load a datasource named [base] success
+15:45:06.605 [main] INFO  c.b.d.d.DynamicRoutingDataSource - [afterPropertiesSet,216] - dynamic-datasource initial loaded [1] datasource,primary datasource named [base]
+15:45:08.709 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8101"]
+15:45:08.732 [main] INFO  c.a.n.client.naming - [addBeatInfo,81] - [BEAT] adding beat: BeatInfo{port=8101, ip='192.168.1.110', weight=1.0, serviceName='DEFAULT_GROUP@@webgame-auth', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+15:45:08.733 [main] INFO  c.a.n.client.naming - [registerService,230] - [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@webgame-auth with instance: Instance{instanceId='null', ip='192.168.1.110', port=8101, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+15:45:08.750 [main] INFO  c.a.c.n.r.NacosServiceRegistry - [register,75] - nacos registry, DEFAULT_GROUP webgame-auth 192.168.1.110:8101 register finished
+15:45:09.346 [com.alibaba.nacos.naming.push.receiver] INFO  c.a.n.client.naming - [run,86] - received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@webgame-auth\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"192.168.1.110#8101#DEFAULT#DEFAULT_GROUP@@webgame-auth\",\"ip\":\"192.168.1.110\",\"port\":8101,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@webgame-auth\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"instanceHeartBeatInterval\":5000,\"instanceHeartBeatTimeOut\":15000,\"ipDeleteTimeout\":30000}],\"lastRefTime\":1622876963325,\"checksum\":\"\",\"allIPs\":false,\"valid\":true}","lastRefTime":2187914411528} from /192.168.1.118
+15:45:09.364 [com.alibaba.nacos.naming.push.receiver] INFO  c.a.n.client.naming - [processServiceJson,228] - new ips(1) service: DEFAULT_GROUP@@webgame-auth@@DEFAULT -> [{"instanceId":"192.168.1.110#8101#DEFAULT#DEFAULT_GROUP@@webgame-auth","ip":"192.168.1.110","port":8101,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@webgame-auth","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+15:45:09.378 [com.alibaba.nacos.naming.push.receiver] INFO  c.a.n.client.naming - [processServiceJson,267] - current ips:(1) service: DEFAULT_GROUP@@webgame-auth@@DEFAULT -> [{"instanceId":"192.168.1.110#8101#DEFAULT#DEFAULT_GROUP@@webgame-auth","ip":"192.168.1.110","port":8101,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@webgame-auth","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+15:45:09.815 [main] INFO  c.w.a.WebGameAuthApplication - [logStarted,61] - Started WebGameAuthApplication in 11.211 seconds (JVM running for 12.614)
+15:45:09.824 [main] INFO  c.a.n.c.c.i.ClientWorker - [addCacheDataIfAbsent,239] - [fixed-192.168.1.118_8848] [subscribe] webgame-auth+DEFAULT_GROUP
+15:45:09.825 [main] INFO  c.a.n.c.c.i.CacheData - [addListener,93] - [fixed-192.168.1.118_8848] [add-listener] ok, tenant=, dataId=webgame-auth, group=DEFAULT_GROUP, cnt=1
+15:45:09.825 [main] INFO  c.a.n.c.c.i.ClientWorker - [addCacheDataIfAbsent,239] - [fixed-192.168.1.118_8848] [subscribe] webgame-auth.yml+DEFAULT_GROUP
+15:45:09.826 [main] INFO  c.a.n.c.c.i.CacheData - [addListener,93] - [fixed-192.168.1.118_8848] [add-listener] ok, tenant=, dataId=webgame-auth.yml, group=DEFAULT_GROUP, cnt=1
+15:45:09.827 [main] INFO  c.a.n.c.c.i.ClientWorker - [addCacheDataIfAbsent,239] - [fixed-192.168.1.118_8848] [subscribe] webgame-auth-dev.yml+DEFAULT_GROUP
+15:45:09.827 [main] INFO  c.a.n.c.c.i.CacheData - [addListener,93] - [fixed-192.168.1.118_8848] [add-listener] ok, tenant=, dataId=webgame-auth-dev.yml, group=DEFAULT_GROUP, cnt=1
+15:45:10.341 [RMI TCP Connection(2)-192.168.1.110] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:46:39.367 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.1.6.Final
+15:46:40.593 [main] INFO  c.a.n.c.c.i.LocalConfigInfoProcessor - [<clinit>,212] - LOCAL_SNAPSHOT_PATH:C:\Users\yilifenchen\nacos\config
+15:46:40.620 [main] INFO  c.a.n.c.c.i.Limiter - [<clinit>,54] - limitTime:5.0
+15:46:40.663 [main] INFO  c.a.n.c.c.u.JvmUtil - [<clinit>,49] - isMultiInstance:false
+15:46:40.723 [main] INFO  c.w.a.WebGameAuthApplication - [logStartupProfileInfo,655] - The following profiles are active: dev
+15:46:43.018 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8101"]
+15:46:43.019 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+15:46:43.019 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.41]
+15:46:43.164 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+15:46:44.056 [main] INFO  o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
+15:47:22.026 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.1.6.Final
+15:47:23.006 [main] INFO  c.a.n.c.c.i.LocalConfigInfoProcessor - [<clinit>,212] - LOCAL_SNAPSHOT_PATH:C:\Users\yilifenchen\nacos\config
+15:47:23.033 [main] INFO  c.a.n.c.c.i.Limiter - [<clinit>,54] - limitTime:5.0
+15:47:23.109 [main] INFO  c.a.n.c.c.u.JvmUtil - [<clinit>,49] - isMultiInstance:false
+15:47:23.163 [main] INFO  c.w.a.WebGameAuthApplication - [logStartupProfileInfo,655] - The following profiles are active: dev
+15:47:25.150 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8101"]
+15:47:25.151 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+15:47:25.152 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.41]
+15:47:25.270 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+15:47:26.319 [main] INFO  o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
+15:48:36.749 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.1.6.Final
+15:48:37.701 [main] INFO  c.a.n.c.c.i.LocalConfigInfoProcessor - [<clinit>,212] - LOCAL_SNAPSHOT_PATH:C:\Users\yilifenchen\nacos\config
+15:48:37.736 [main] INFO  c.a.n.c.c.i.Limiter - [<clinit>,54] - limitTime:5.0
+15:48:37.881 [main] INFO  c.a.n.c.c.u.JvmUtil - [<clinit>,49] - isMultiInstance:false
+15:48:37.953 [main] INFO  c.w.a.WebGameAuthApplication - [logStartupProfileInfo,655] - The following profiles are active: dev
+15:48:40.273 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8101"]
+15:48:40.274 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+15:48:40.274 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.41]
+15:48:40.397 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+15:48:42.436 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+15:48:42.440 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+15:48:43.705 [main] INFO  c.a.n.client.naming - [call,65] - initializer namespace from System Property :null
+15:48:43.706 [main] INFO  c.a.n.client.naming - [call,74] - initializer namespace from System Environment :null
+15:48:43.706 [main] INFO  c.a.n.client.naming - [call,84] - initializer namespace from System Property :null
+15:48:43.800 [main] INFO  c.z.h.HikariDataSource - [<init>,80] - base - Starting...
+15:48:44.174 [main] INFO  c.z.h.HikariDataSource - [<init>,82] - base - Start completed.
+15:48:44.174 [main] INFO  c.b.d.d.DynamicRoutingDataSource - [addDataSource,144] - dynamic-datasource - load a datasource named [base] success
+15:48:44.174 [main] INFO  c.b.d.d.DynamicRoutingDataSource - [afterPropertiesSet,216] - dynamic-datasource initial loaded [1] datasource,primary datasource named [base]
+15:48:46.415 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8101"]
+15:48:46.442 [main] INFO  c.a.n.client.naming - [addBeatInfo,81] - [BEAT] adding beat: BeatInfo{port=8101, ip='192.168.1.110', weight=1.0, serviceName='DEFAULT_GROUP@@webgame-auth', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+15:48:46.443 [main] INFO  c.a.n.client.naming - [registerService,230] - [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@webgame-auth with instance: Instance{instanceId='null', ip='192.168.1.110', port=8101, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+15:48:46.455 [main] INFO  c.a.c.n.r.NacosServiceRegistry - [register,75] - nacos registry, DEFAULT_GROUP webgame-auth 192.168.1.110:8101 register finished
+15:48:46.981 [com.alibaba.nacos.naming.push.receiver] INFO  c.a.n.client.naming - [run,86] - received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@webgame-auth\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"192.168.1.110#8101#DEFAULT#DEFAULT_GROUP@@webgame-auth\",\"ip\":\"192.168.1.110\",\"port\":8101,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@webgame-auth\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"instanceHeartBeatInterval\":5000,\"instanceHeartBeatTimeOut\":15000,\"ipDeleteTimeout\":30000}],\"lastRefTime\":1622877180963,\"checksum\":\"\",\"allIPs\":false,\"valid\":true}","lastRefTime":2405552187843} from /192.168.1.118
+15:48:46.997 [com.alibaba.nacos.naming.push.receiver] INFO  c.a.n.client.naming - [processServiceJson,228] - new ips(1) service: DEFAULT_GROUP@@webgame-auth@@DEFAULT -> [{"instanceId":"192.168.1.110#8101#DEFAULT#DEFAULT_GROUP@@webgame-auth","ip":"192.168.1.110","port":8101,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@webgame-auth","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+15:48:47.008 [com.alibaba.nacos.naming.push.receiver] INFO  c.a.n.client.naming - [processServiceJson,267] - current ips:(1) service: DEFAULT_GROUP@@webgame-auth@@DEFAULT -> [{"instanceId":"192.168.1.110#8101#DEFAULT#DEFAULT_GROUP@@webgame-auth","ip":"192.168.1.110","port":8101,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@webgame-auth","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+15:48:47.481 [main] INFO  c.w.a.WebGameAuthApplication - [logStarted,61] - Started WebGameAuthApplication in 11.848 seconds (JVM running for 13.815)
+15:48:47.490 [main] INFO  c.a.n.c.c.i.ClientWorker - [addCacheDataIfAbsent,239] - [fixed-192.168.1.118_8848] [subscribe] webgame-auth+DEFAULT_GROUP
+15:48:47.491 [main] INFO  c.a.n.c.c.i.CacheData - [addListener,93] - [fixed-192.168.1.118_8848] [add-listener] ok, tenant=, dataId=webgame-auth, group=DEFAULT_GROUP, cnt=1
+15:48:47.492 [main] INFO  c.a.n.c.c.i.ClientWorker - [addCacheDataIfAbsent,239] - [fixed-192.168.1.118_8848] [subscribe] webgame-auth.yml+DEFAULT_GROUP
+15:48:47.492 [main] INFO  c.a.n.c.c.i.CacheData - [addListener,93] - [fixed-192.168.1.118_8848] [add-listener] ok, tenant=, dataId=webgame-auth.yml, group=DEFAULT_GROUP, cnt=1
+15:48:47.494 [main] INFO  c.a.n.c.c.i.ClientWorker - [addCacheDataIfAbsent,239] - [fixed-192.168.1.118_8848] [subscribe] webgame-auth-dev.yml+DEFAULT_GROUP
+15:48:47.494 [main] INFO  c.a.n.c.c.i.CacheData - [addListener,93] - [fixed-192.168.1.118_8848] [add-listener] ok, tenant=, dataId=webgame-auth-dev.yml, group=DEFAULT_GROUP, cnt=1
+15:48:48.276 [RMI TCP Connection(1)-192.168.1.110] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'

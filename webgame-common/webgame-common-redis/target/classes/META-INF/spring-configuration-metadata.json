@@ -1,0 +1,19 @@
+{
+  "groups": [
+    {
+      "name": "webgame.lettuce.redis",
+      "type": "com.webgame.common.redis.propeties.WebGameLettuceRedisProperties",
+      "sourceType": "com.webgame.common.redis.propeties.WebGameLettuceRedisProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "webgame.lettuce.redis.enable",
+      "type": "java.lang.Boolean",
+      "description": "是否开启Lettuce Redis",
+      "sourceType": "com.webgame.common.redis.propeties.WebGameLettuceRedisProperties",
+      "defaultValue": true
+    }
+  ],
+  "hints": []
+}
