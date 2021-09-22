@@ -14,5 +14,6 @@ public class WebGameGatewayApplication {
     public static void main(String[] args) {
         SpringApplication.run(WebGameGatewayApplication.class, args);
         System.out.println("(♥◠‿◠)ﾉﾞ webgame网关启动成功  └(^o^)┘└(^o^)┘");
+
      }
 }
